@@ -29,6 +29,16 @@
 				model.sophie.says = introduction + ' ' + SophieBot.getInitial();
 				model.user = {};
 
+				model.user.promptResponse = function () {
+					if(model.sophie.says.indexOf('feel') > -1){
+						model.user.prompt = 'I feel..';
+					} else if(model.sophie.says.indexOf('afraid') > -1){
+						model.user.prompt = "I\'m afraid of..";
+					}
+				};
+
+				model.user.promptResponse();
+
 				model.sophie.reset = function () {
 					model.sophie.says = 'Goodbye.';
 					SophieBot.reset();
