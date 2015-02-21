@@ -1,0 +1,17 @@
+<!--
+<h1>Home of Sophie</h1>
+
+<p>Code it up</p>
+
+<p>
+    <span ng-bind="model.someVar" />
+    <ul>
+        <li ng-repeat="item in model.someList">{{item}}</li>
+    </ul>
+    <button class="btn btn-primary" ng-click="model.someFunctionUsedByTheHomePage()">Click Me</button>
+</p>-->
+
+<form ng-submit="model.sophie.reply()">
+	<h1>{{model.sophie.says}}</h1>
+	<input type="text" ng-model="model.user.says" value="">
+</form>
