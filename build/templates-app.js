@@ -25,7 +25,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "<form ng-submit=\"model.sophie.reply()\">\n" +
     "	<h1>{{model.sophie.says}}</h1>\n" +
     "	<input placeholder=\"{{model.user.prompt}}\" type=\"text\" ng-model=\"model.user.says\" value=\"\"></input>\n" +
-    "	<div ng-enter=\"model.sophie.reply()\" contenteditable ng-model=\"model.user.says\" strip-br=\"true\"></div>\n" +
+    "	<textarea ng-enter=\"model.sophie.reply()\" contenteditable ng-model=\"model.user.says\" strip-br=\"true\"></textarea>\n" +
     "</form>\n" +
     "");
 }]);
