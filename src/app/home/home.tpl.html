@@ -14,4 +14,5 @@
 <form ng-submit="model.sophie.reply()">
 	<h1>{{model.sophie.says}}</h1>
 	<input placeholder="{{model.user.prompt}}" type="text" ng-model="model.user.says" value=""></input>
+	<textarea ng-enter="model.sophie.reply()" contenteditable ng-model="model.user.says" strip-br="true"></textarea>
 </form>
