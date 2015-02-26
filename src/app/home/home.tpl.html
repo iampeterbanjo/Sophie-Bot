@@ -11,8 +11,11 @@
     <button class="btn btn-primary" ng-click="model.someFunctionUsedByTheHomePage()">Click Me</button>
 </p>-->
 
-<form ng-submit="model.sophie.reply()">
-	<h1>{{model.sophie.says}}</h1>
-	<input placeholder="{{model.user.prompt}}" type="text" ng-model="model.user.says" value=""></input>
-	<textarea ng-enter="model.sophie.reply()" contenteditable ng-model="model.user.says" strip-br="true"></textarea>
+<form ng-submit="model.sophie.reply()" class="row">
+	<div class="col-sm-6 col-xs-12">
+		<h1>{{model.sophie.says}}</h1>
+	</div>
+	<div class="col-sm-6 col-xs-12">
+		<input class="user-input" placeholder="{{model.user.prompt}}" type="text" ng-model="model.user.says" value=""></input>
+	</div>
 </form>

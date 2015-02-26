@@ -19,7 +19,7 @@
         // The top section of a controller should be lean and make it easy to see the "signature" of the controller
         //  at a glance.  All function definitions should be contained lower down.
         var model = this
-						, introduction = "Hi I\'m Sophie."
+						, introduction = "Hi, I\'m Sophie."
 						, SophieBot = new ElizaBot()
 						, sophiesLines;
 
@@ -47,6 +47,7 @@
 
 				model.sophie.reply = function () {
 					model.sophie.says = SophieBot.transform(model.user.says);
+					model.user.says = '';
 				};
 
         init();
